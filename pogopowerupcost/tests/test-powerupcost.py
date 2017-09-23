@@ -20,4 +20,9 @@ class TestCalculation(TestCase):
 	def test_scenario_3(self):
 		cost = calculate_powerup_cost(36.5, 39)
 		self.assertEqual(cost['stardust'], 44000)
-		self.assertEqual(cost['candy'], 20)
+		self.assertEqual(cost['candy'], 58)
+
+	def test_scenario_4(self):
+		cost = calculate_powerup_cost(30.0, 38.5)
+		self.assertEqual(cost['stardust'], 121000)
+		self.assertEqual(cost['candy'], 140)
